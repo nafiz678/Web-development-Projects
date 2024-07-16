@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+
+/* Shared styles */
+.flex {
+    display: flex;
+}
+.detail{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 0.89rem;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* Header related styles */
+header {
+    width: calc(100% - 105px - 105px);
+    margin: 0 auto;
+}
+
+.navbar {
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.nav {
+    align-items: center;
+    gap: 26px;
+}
+
+.nav-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: rgb(58, 58, 58);
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 0.89rem;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+/* Banner related styles */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 115px;
+    margin-bottom: 87px;
+}
+.banner-title{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.primary-btn{
+    color: white;
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    padding: 10px 24px 10px 24px;
+    border: none;
+}
+
+.banner-img{
+    max-width: 388px;
+    position: absolute;
+    top: 154px;
+    left: 693px;
+}
+
+.bg-image{
+    max-width: 418px;
+}
