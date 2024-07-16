@@ -7,6 +7,7 @@
 * {
     font-family: "Poppins", sans-serif;
     font-style: normal;
+    margin: 0;
 }
 
 
@@ -14,7 +15,8 @@
 .flex {
     display: flex;
 }
-.detail{
+
+.detail {
     color: rgb(58, 58, 58);
     font-family: Poppins;
     font-size: 0.89rem;
@@ -35,8 +37,9 @@ hr {
     background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
     background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
     border: 0;
-  }
-  hr:after {
+}
+
+hr:after {
     display: block;
     content: '';
     height: 30px;
@@ -45,16 +48,25 @@ hr {
     background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
     background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
     background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
-  }
+}
 
 
 
 
 
 /* Header related styles */
-header , main {
+header,
+main {
     width: calc(100% - 105px - 105px);
     margin: 0 auto;
+}
+
+main {
+    width: calc(100% - 105px - 105px);
+    margin: 100px auto;
+}
+.section-1{
+    padding-top: 52px;
 }
 
 .navbar {
@@ -90,13 +102,15 @@ header , main {
 }
 
 /* Banner related styles */
-.banner{
+.banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     gap: 115px;
     margin-bottom: 87px;
 }
-.banner-title{
+
+.banner-title {
     color: rgb(58, 58, 58);
     font-family: Poppins;
     font-size: 3rem;
@@ -105,7 +119,8 @@ header , main {
     text-align: left;
     margin-bottom: 15px;
 }
-.primary-btn{
+
+.primary-btn {
     color: white;
     font-size: 0.88rem;
     font-weight: 600;
@@ -118,21 +133,21 @@ header , main {
     border: none;
 }
 
-.banner-img{
+.banner-img {
     max-width: 388px;
     position: absolute;
     top: 154px;
     left: 693px;
 }
 
-.bg-image{
+.bg-image {
     max-width: 418px;
 }
 
 /* Company related style */
-.companies{
+.companies {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     align-items: baseline;
     margin-left: 38px;
     gap: 50px;
@@ -140,7 +155,7 @@ header , main {
 }
 
 /* Popular section related styles */
-.main-title{
+.main-title {
     color: rgb(58, 58, 58);
     font-family: Poppins;
     font-size: 1.5rem;
@@ -149,28 +164,36 @@ header , main {
     letter-spacing: 0px;
     text-align: left;
     text-align: center;
+    margin-bottom: 30px;
 }
-.popular-cards{
-    width: 932px;
+
+.popular-cards {
+
     display: grid;
     grid-template-columns: repeat(3, 294px);
     grid-template-rows: repeat(3, 1fr);
-    margin: 0 auto 70px;
+
     gap: 30px;
 }
 
+.section-2 {
+    width: 943px;
+    margin: 0 auto 70px;
+}
 
-.card-box{
+
+.card-box {
     padding: 15px 13px;
     border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
 }
-.card-box > img{
+
+.card-box>img {
     width: 100%;
 }
 
-.product-name{
+.product-name {
     color: rgb(24, 25, 31);
     font-size: 1.6rem;
     font-weight: 500;
@@ -178,7 +201,7 @@ header , main {
     text-align: left;
 }
 
-.product-price{
+.product-price {
     color: rgba(0, 0, 0, 0.87);
     font-family: Inter;
     font-size: 1.6rem;
@@ -197,7 +220,8 @@ header , main {
     letter-spacing: 0.1px;
     text-align: left;
 }
-.card-details{
+
+.card-details {
     color: rgb(120, 120, 133);
     font-family: Inter;
     font-size: 0.7rem;
@@ -205,4 +229,93 @@ header , main {
     line-height: 143%;
     letter-spacing: 1.8%;
     text-align: left;
+}
+
+.see-more {
+    margin-top: 25px;
+    color: #E02C6D;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 9px;
+}
+
+/* section 3 related styles */
+
+.sec-3-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.sec-3-box {
+    max-width: 542px;
+    margin-bottom: 23px;
+}
+
+.sec-3-title {
+    color: rgb(10, 8, 38);
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.sec-3-detail {
+    color: rgb(108, 108, 108);
+    font-family: Poppins;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.sec-btn {
+    padding: 8px 21px 8px 21px;
+    border-radius: 0px;
+    background: rgb(224, 44, 109);
+}
+
+/* Footer section */
+footer {
+    color: white;
+    background-color: rgb(9, 18, 32);
+    padding: 40px 300px;
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1.34rem;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.footer-detail {
+    color: rgb(217, 219, 225);
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.footer-icon{
+    justify-content: center;
+}
+
+.footer-box{
+    background-color: #23213c;
+    margin: 13px;
+    width: 20px;
+    height: 20px;
+    padding: 8px 8px;
+    border-radius: 50%;
+}
+.footer-image{
+    max-width: 100%;
 }
