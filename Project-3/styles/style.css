@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -22,9 +26,33 @@
 
 
 
+hr {
+    height: 1px;
+    margin: 27px 0;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+    border: 0;
+  }
+  hr:after {
+    display: block;
+    content: '';
+    height: 30px;
+    background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+
+
+
 
 /* Header related styles */
-header {
+header , main {
     width: calc(100% - 105px - 105px);
     margin: 0 auto;
 }
@@ -99,4 +127,82 @@ header {
 
 .bg-image{
     max-width: 418px;
+}
+
+/* Company related style */
+.companies{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: baseline;
+    margin-left: 38px;
+    gap: 50px;
+    padding: 0;
+}
+
+/* Popular section related styles */
+.main-title{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-align: center;
+}
+.popular-cards{
+    width: 932px;
+    display: grid;
+    grid-template-columns: repeat(3, 294px);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto 70px;
+    gap: 30px;
+}
+
+
+.card-box{
+    padding: 15px 13px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+.card-box > img{
+    width: 100%;
+}
+
+.product-name{
+    color: rgb(24, 25, 31);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+}
+
+.product-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.rating {
+    color: rgb(94, 99, 102);
+    font-family: Roboto;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.1px;
+    text-align: left;
+}
+.card-details{
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    text-align: left;
 }
