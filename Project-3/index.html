@@ -20,9 +20,9 @@
                     <li class="nav-item"><a href="" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Sign Up</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Log In</a></li>
-                    <li class="nav-item"><a href="" class="nav-link"><img src="./icons/search-19.svg"
+                    <li class="nav-item"><a href="" class="nav-link"><img class="search" src="./icons/search-19.svg"
                                 alt="Search icon"></a></li>
-                    <li class="nav-item"><a href="" class="nav-link"><img src="./icons/icons8-cart-29.png" alt=""></a>
+                    <li class="nav-item"><a href="" class="nav-link"><img src="./icons/icons8-cart-29.png" class="cart" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -33,8 +33,10 @@
                     Influencer</h1>
                 <p class="banner-detail detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum
                     sed scelerisque eros. Lectus faucibus.</p>
-                <button class="primary-btn flex">Prebook now <img class="btn-image"
+                <div class="btn-banner">
+                    <button class="primary-btn flex">Prebook now <img class="btn-image"
                         src="./icons/icons8-right-arrow-16.png" alt=""></button>
+                </div>
             </div>
             <div class="images flex">
                 <img src="./images/Circle design.svg" alt="" class="bg-image">
@@ -43,8 +45,8 @@
 
         </section>
 
-        <hr>
-        <div class="companies">
+        <!-- <hr> -->
+        <div class="companies hide">
             <img src="./logos/Alibaba.svg" alt="" class="brands">
             <img src="./logos/Amazon.svg" alt="" class="brands">
             <img src="./logos/Daraz.pk Logo.svg" alt="" class="brands">
@@ -53,9 +55,9 @@
             <img src="./logos/Walmart.svg" alt="" class="brands">
             <img src="./logos/Target.svg" alt="" class="brands">
         </div>
-        <hr>
+        <!-- <hr> -->
     </header>
-    <main>
+    <main class="hide">
         <h3 class="main-title">Popular Collection</h3>
 
         <div class="section-2">
@@ -234,7 +236,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="hide">
         <div class="section-4">
             <h3 class="footer-title">Influencer products</h3>
             <p class="footer-detail">Copyright © 2020  influencer products <br>All rights reserved</p>
